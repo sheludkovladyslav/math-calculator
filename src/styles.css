@@ -1,0 +1,148 @@
+body {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-description {
+  width: 80%;
+  border: 2px solid #ddddee;
+  border-radius: 3%;
+  margin-bottom: 3%;
+}
+
+input {
+  width: 100px;
+  height: 20px;
+  box-shadow: 0px -5px 35px -4px rgba(0, 0, 0, 0.47);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  color: black;
+}
+
+.js-btn-result {
+  font-size: 24px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.main {
+  background-color: #dddddd;
+  border-radius: 10px;
+  box-shadow: 0px 18px 15px -4px rgba(0, 0, 0, 0.47);
+}
+
+.calculator-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.switch-btns {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0px 0px 10px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  background: inherit;
+  cursor: pointer;
+}
+
+.js-select-operation {
+  width: 40px;
+  height: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px -5px 35px -4px rgba(0, 0, 0, 0.47);
+}
+
+.calculator-wrapper {
+  box-shadow: -3px 9px 21px 8px rgba(0, 0, 0, 0.47);
+  height: 160px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.instruction-container {
+  display: none;
+}
+
+.instruction {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 40px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-title {
+  font-style: italic;
+  color: blue;
+}
+
+@media only screen and (max-width: 663px) {
+  .header-description {
+    width: 100%;
+  }
+
+  .header-title {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .calculator-container {
+    width: 100%;
+  }
+
+
+}
+

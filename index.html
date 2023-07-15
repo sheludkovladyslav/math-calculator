@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/reset.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Онлайн калькулятор. Множення стовпчиком</h1>
+      <p class="header-description">
+        Цей онлайн калькулятор допоможе вам зрозуміти, як множити цілі числа та
+        десяткові дроби стовпчиком. Калькулятор множення стовпчиком дуже просто
+        і швидко знайде частку і видасть детальний розв'язок задачі.
+      </p>
+    </header>
+    <main class="main">
+      <ul class="switch-btns">
+        <li class="switch-btn">
+          <button
+            onclick="document.getElementById('calculator').style.display = 'flex', document.getElementById('instruction').style.display = 'none'"
+            class="btn"
+          >
+            Калькулятор
+          </button>
+        </li>
+        <li class="switch-btn">
+          <button
+            onclick="document.getElementById('calculator').style.display = 'none', document.getElementById('instruction').style.display = 'flex'"
+            class="btn"
+          >
+            Інструкція
+          </button>
+        </li>
+      </ul>
+      <div class="calculator-container" id="calculator">
+        <div class="calculator-wrapper">
+          <div class="calculator">
+            <input class="js-input-a" type="number" />
+            <select name="" id="" class="js-select-operation">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+            <input class="js-input-b" type="number" />
+            <button class="js-btn-result">=</button>
+            <p class="js-output"></p>
+          </div>
+        </div>
+      </div>
+      <div class="instruction-container" id="instruction">
+        <section class="instruction">
+          <section class="card">
+            <h2 class="card-title">
+              Ввід даних в калькулятор для множення стовпчиком
+            </h2>
+            <p class="card-description">
+              В онлайн калькулятор можна вводити натуральні числа або десяткові
+              дроби.
+            </p>
+          </section>
+          <section class="card">
+            <h2 class="card-title">
+              Додаткові можливості калькулятора для множення стовпчиком
+            </h2>
+            <p class="card-description">
+              Використовуйте стрілки(вправо,вліво) на клавіатурі, для переміщення між полями
+              калькулятору.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2 class="card-title">
+              Інструкція використання калькулятора для множення стовпчиком
+            </h2>
+            <p class="card-description">
+              Для обчислення достатньо ввести числа (цілі або десяткові дроби) і
+              натиснути кнопку "=".
+            </p>
+          </section>
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="math.js"></script>
+  </body>
+</html>
