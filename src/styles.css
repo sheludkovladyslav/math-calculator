@@ -52,7 +52,7 @@ input {
   border-radius: 10px;
   box-shadow: 0px 18px 15px -4px rgba(0, 0, 0, 0.47);
   padding-bottom: 50px;
-  height: 100%;
+  border: 2px solid #dddddd;
 }
 
 .button {
@@ -67,7 +67,6 @@ input {
   height: 400px;
   margin: 0 auto;
 }
-
 
 .switch-btns {
   display: flex;
@@ -102,14 +101,12 @@ input {
   align-items: center;
   border-radius: 5px;
   background-color: #dddddd;
-
 }
 
 .calculator {
   display: flex;
   align-items: center;
   gap: 5px;
-
 }
 
 .instruction-container {
@@ -154,6 +151,7 @@ input {
 
   .main {
     margin-top: 10%;
+    box-shadow: 0px 18px 15px -4px rgba(0, 0, 0, 0.47);
   }
 }
 
