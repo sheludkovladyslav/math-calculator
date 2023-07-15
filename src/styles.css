@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  color: black;
 }
 
 li {
@@ -32,7 +33,7 @@ input {
   border: none;
   outline: none;
   border-radius: 7px;
-  color: black;
+  color: inherit;
 }
 
 .js-btn-result {
@@ -44,13 +45,19 @@ input {
   height: 30px;
   border: 1px solid black;
   border-radius: 5px;
+  color: inherit;
 }
 
 .main {
-  background-color: #dddddd;
   border-radius: 10px;
   box-shadow: 0px 18px 15px -4px rgba(0, 0, 0, 0.47);
   padding-bottom: 50px;
+  border: 2px solid #dddddd;
+  
+}
+
+.button {
+  color: inherit;
 }
 
 .calculator-container {
@@ -61,6 +68,7 @@ input {
   height: 400px;
   margin: 0 auto;
 }
+
 
 .switch-btns {
   display: flex;
@@ -94,12 +102,15 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  background-color: #dddddd;
+
 }
 
 .calculator {
   display: flex;
   align-items: center;
   gap: 5px;
+
 }
 
 .instruction-container {
